@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dmitry Razumenko - Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <header>
         <h1>Dmitry Razumenko</h1>
     </header>
     <section>
-        <img src="DarthVader.jpg" alt="Alter ego" class="profile-img">
+        <img src="{{ url_for('static', filename='DarthVader.jpg') }}" alt="Alter ego" class="profile-img">
         <p>Hello! I am Dmitry Razumenko, a first-year master's degree student at ITMO University in St. Petersburg. I enjoy sports and application security.</p>
         <p>This page is to showcase some basic of web app skills. Feel free to browse my GitHub profile for more projects!</p>
     </section>
     <footer>
-        <p>Contact me: <a href="RazumenkoDS@yandex.ru">RazumenkoDS@yandex.ru</a></p>
+        <p>Contact me: <a href="mailto:RazumenkoDS@yandex.ru">RazumenkoDS@yandex.ru</a></p>
     </footer>
 </body>
 </html>
